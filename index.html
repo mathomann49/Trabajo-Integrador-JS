@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCloud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/animaciones.css">
+
+</head>
+<body>
+    <header class="header">
+        
+        <span class="nav-bar" id="btn-menu"><i class="fa-solid fa-bars"></i></span>
+        <div class="logo-image">
+            <img class="logo" src="./assets/logoalt.png" alt="sc logo">
+        </div>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#hero" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="#glasses" class="menu__link">Anteojos</a></li>
+                <li class="menu__item"><a href="#products" class="menu__link">Tendencias</a></li>
+                <li class="menu__item__user" id="menu__item">
+                    <a  class="menu__link__user" id="btn-submenu"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu submenu-hide" id="subMenu">
+                        <li class="menu__item"><a href="./assets/reg.html" class="menu__link">Regístrate</a></li>
+                        <li class="menu__item"><a href="./assets/log.html" class="menu__link">Inicia seción</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#ContactSec" class="menu__link">contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="bag__container"> 
+            <div class="item">
+                <span class="bubble"></span>
+            </div>
+            <span class="bag" id="btn-bag"><i class="fa-solid fa-bag-shopping"></i></span>
+            
+        </div>
+     
+           <div class="bag-container">
+                <h2>Items seleccionados</h2>
+                <p></p>
+                <div class="bag__item__container">
+                
+                </div>
+                <span class="divider"></span>   
+                <div class="shop-total">
+                    <p class="total">Total:</p>
+                    <p class="total-number"></p>
+                </div>
+                <button class="btn-add">comprar</button>
+                <button class="btn-remove">eliminar bolsa</button>
+           </div>
+        </nav>
+      
+    </header> 
+     
+    <section class="hero" id="hero">
+    
+    
+        <img class="couple" src="./assets/pareja-web-progresivo.png" alt="pareja con anteojos">
+        
+    
+     <div class="initial_text">
+        <h1 class="texto-foto">La supremacía del pixel. ¿Por qué usar anteojos?</h1> 
+        <p>Hoy en día, gran parte de la información que manejamos durante la jornada
+             es de naturaleza visual. Con lo cual, es muy importante cuidar nuestro sentido de
+              la vista. Los dispositivos de pantalla que usamos emiten cierta 
+              radiación que nos cansa la vista, nos puede dificultar el sueño o
+               provocar una disminución significativa de la lubricación ocular 
+               que deriva en molestias físicas en nuestros ojos. Para contrarrestar
+                esto, están los anteojos de “filtro azul” y si ya usamos anteojos 
+                para presbicia, se les puede agregar dicho filtro.
+            Ofrecemos anteojos estandarizados, con materiales de calidad, fabricados
+             bajo estrictas condiciones, cumpliendo normas europeas que garantizan 
+             su calidad.
+            </p>
+        <a class="show__more" href="#glasses">ver más...</a>
+        <img class="gafas" src="./assets/anteojosGen.png" alt="par de anteojos">
+     </div>
+
+     
+    </section>
+     
+    <main>
+        <section id="glasses" >
+            <div class="container">
+                <div class="blue__filter">
+                    <h2>Filtrado de Luz Azul</h2>
+                    <img src="./assets/total_bluepng1.png" alt="anteojos">
+                    <p>La lente <b>PreCel</b> "Total Blue" ofrece a sus ojos una protección
+                         del 100 % contra los rayos UV y filtra la luz azul visible
+                          de alta energía dañina (HEV), lo que reduce el riesgo 
+                          asociado con la exposición a largo plazo a los rayos UV y
+                           HEV, proveniente de dispositivos de pantalla y lámparas led.</p>
+                           <img class="spectrum" src="./assets/espectro.png" alt="espectro de la luz">
+                </div>                        
+                <div class="graduate">
+                    <h2>Lentes graduadas (presbicia)</h2>
+                    <img src="./assets/montura_de_prueba1.png" alt="montura de prueba">
+                    <p>Descubre <b>PreCel</b>, productos de origen francés, fabricados bajo las 
+                        más estrictas normas europeas (EN – clase 2). Se trata de gafas con
+                         armazones de acetato de celulosa y lentes de C39 antirreflejo, 
+                         monofocales. Pueden contener un filtro azul si es de su 
+                         preferencia. El material es duradero y resistente a los rayones.</p>
+                </div>
+                <div class="sun">
+                    <h2>Anteojos de sol</h2>
+                    <img src="./assets/UV.png" alt="proteccion uv">
+                    <p>Todo el mundo sabe que es importante llevar gafas de sol en los días soleados, pero también es esencial llevarlas durante las horas normales del día, incluso cuando está nublado. 
+                        La nieve refleja el 80% de los rayos UV del sol. En este caso, el resplandor del sol reflejado quema la córnea (quemadura de la córnea).
+                        Los anteojos <b>PreCel</b> poseen marcos de acetato de celulosa y ofrecen una protección UV del 100%.
+                        </p>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="filter">
+                    <h1>Productos</h1>
+                    <p><i class="fa-solid fa-filter"></i> filtros</p>
+                    
+                    <div class="categories" id="categories">
+                        <button class="category active__filterer">Todos</button>
+                        <button class="category" data-category="mujerGraduados">Mujer graduados</button>
+                        <button class="category" data-category="mujerSol">Mujer sol</button>
+                        <button class="category" data-category="hombreGraduado">Hombre graduados</button>
+                        <button class="category" data-category="hombreSol">Hombre sol</button>
+                        <button class="category" data-category="luzAzul">Luz azul</button>
+                    </div>
+                    
+                </div>
+            <div class="products__container" id="products__container">
+                
+
+                
+                </div>
+                <button class="show__more__products" id="show__more__products">Ver más anteojos</button>
+                
+            <!-- </div> -->
+        </section>
+
+        <section class="ContactSec" id="ContactSec">
+            
+            <div class="info-container">
+                
+                <span>Contacto</span>
+             <div class="info-contact">
+                <div class="item-localizacion">
+                    <h3>Localización</h3>
+                    <p><i class="fa-solid fa-location-dot"></i></i>Calle 12 Nro: 1183 e/56 y 57 La Plata</p>
+                    <p><i class="fa-solid fa-phone"></i>221 - 437-1822</p>
+                    <p><i class="fa-solid fa-envelope"></i>Opticloud@gmail.com</p>
+                </div>
+        
+                <div class="item-localizacion">
+                     <h3>En las redes</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
+             </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3375964742067!2d-57.952492485183704!3d-34.92306928197138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e625f607d639%3A0x842faf535cd1a84d!2sC.%2012%201183%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674583548631!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer id="footer">
+            <div class="footer__container">
+                <div class="column1">
+                    <h2>Acerca de Opticloud</h2>
+                    <p>Somos una empresa importadora, con licencia internacional para la 
+                        comercializacion de los productos ©PreCel, fabricados por 
+                        Ordaz SARL - Courbevoie, Francia, desde agosto de 2020.
+                    </p>
+                    <div class="payment__met">
+                        <h2>Medios de pago habilitados</h2>
+                        <img src="./assets/mercado-pago-es-tarjeta-de-credito-o-debito.png" alt="">
+                    </div>
+                </div>
+                    <div class="column2">
+                        <div class="social">
+                            <h2>Síguenos</h2>
+                            <div class="redes">
+                               <a href="#"><img src="./assets/033fd-logo-instagram-icon.png" alt=""></a> 
+                                <a href="#"><img src="./assets/facebook_logo_rgb-blue.png" alt=""></a>
+                                <a href="#"><img src="./assets/WhatsApp_logo-color-vertical.svg.png" alt=""></a>
+                            </div>
+                        
+                        <img  class="social__logo" src="./assets/brillen logo glas.png" alt="">
+                    </div>
+                    </div>
+                    <div class="column3">
+                        <h2>Utilidades</h2>
+                         <div class="info">
+                        <span><a id="openHorario">Atención y horario</a></span>
+                        <span><a  href="#ContactSec">Contacto</a></span>
+                        <span><a  id="open">¿Cómo comprar?</a></span>
+                        <span><a href="./assets/politicas.html">Política de privacidad</a></span>
+                        <span><a id="openfaqs">Preguntas frecuentes</a></span>
+                    </div>
+                    </div>
+                
+            </div>
+
+            <div class="modal__how-to-buy" id="modal__how-to-buy">
+                <div class="how-to-buy" id="how-to-buy">
+                <i  id="close" class="fa-regular fa-circle-xmark"></i>
+                <h2>¿Cómo efectuar una compra?</h2>
+                <ol class="steps">
+                    <li>Antes que nada, te aclaramos que los envíos son sin cargo para la ciudad de La Plata,
+                         localidades del Partido de La Plata, Berisso y Ensenada. Para otras locaciones, 
+                         consultar por Whatsapp forma y costo del envío</li>
+                    <li>Regístrate. Recibirás un mail con un formulario completando
+                        datos sensibles previos a realizar tu compra. Inicia sesión para realizar la misma.
+                    </li>
+                    <li>Navega y selecciona el producto de tu agrado y luego presiona <b>“agregar a la bolsa”</b></li>
+                    <li>Selecciona el icono de la bolsa y si estás de acuerdo con lo 
+                que muestra la misma, presiona <b>“comprar”</b>, sigue los pasos 
+                propuestos y tu compra se habrá efectuado</li>
+                    <li>Recibe tu producto en tu casa por entrega delivery dentro de las 
+                48hs hábiles a la fecha de la compra. Recibirás un mail de 
+                confirmación previamente</li>
+                    <li>Te invitamos a que nos dejes una reseña en Google Maps. Tu 
+                experiencia es importante para nosotros</li>
+                </ol>
+                </div>
+            </div>
+
+            <div class="modal__horario" id="modal__horario">
+                <div class="horario" id="horario">
+                    <i  id="closeHorario" class="fa-regular fa-circle-xmark"></i>
+                    <h2>Horarios y contacto</h2>
+                    <ul class="item-horario">
+                        <li><b>Wtsp:</b>
+                            +549221-403-2425 
+                            </li>
+                        <li><b>Atención Online: </b>
+                            -	Lunes a sábados | 10 a 19 hs. 
+                            </li>
+                        <li><b>Local comercial</b>
+                            -	Lunes a viernes: 10 a 19hs
+                            -	Sábado: 10 a 16hs.                 
+                            </li>
+                        <li><b>Email:</b> opticloud@gmail.com
+                            </li>
+                        <li><b>Dirección:</b>
+                            -	Calle 12 N° 1183 e/56 y 57 – La Plata
+                            Cod. Postal: 1900                 
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>    
+            
+            <div class="modal__faqs" id="modal__faqs">
+            <div class="faqs" id="faqs">
+                <i  id="closefaqs" class="fa-regular fa-circle-xmark"></i>
+                <h2>Preguntas frecuentes</h2>
+                <ul class="questions">
+                    <li><b>¿Neutro, significa sin Aumento?</b>
+                        Si, un lente NEUTRO, NO tiene aumento, por ende no tiene graduación. 
+                        </li>
+                    <li><b>¿Puedo pedir mi Aumento con Receta sino entiendo lo que dice?</b>
+                        Si, le tomás una foto a la receta de manera de que se vea el contenido
+                             correctamente y nos la compartis a traves de whatsapp. 
+                        </li>
+                    <li><b>¿Se dispone de un PROBADOR VIRTUAL?</b>
+                        Si, entra a nuestro instagram y en historias podrás encontrarlo.
+                             Es muy facil de operar 
+                        </li>
+                    <li><b>¿Puedo cambiar el producto adquirido por otro a traves de la web?</b>
+                        No, los cambios se realizan en nuestro local dentro de las 96hs habiles, 
+                            luego de haberlo recibido comunicandote con nosotros previamente 
+                        </li>
+                    <li><b>¿Cuál es la politica de reembolso?</b>
+                        No se realizan reembolsos 
+                        </li>
+                    
+                </ul>
+            </div>
+            </div>
+
+            
+
+            <div class="divfoot">
+                <p>©2023 - Opticloud - Derechos reservados</p>
+            </div>
+        </footer>
+        <div class="recycle-modal"></div>
+    </main>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/main.js"></script>    
+</body>
+</html>

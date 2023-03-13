@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=GFS+Didot&family=Montserrat&family=PT+Sans+Narrow:wght@400;700&family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #b7b7f8;
+    background-image: radial-gradient(circle at center center, #f745c1, #8484f1), repeating-radial-gradient(circle at center center, #f745c1, #f745c1, 38px, transparent 76px, transparent 38px);
+    background-blend-mode: hard-light; */
+    display: flex;
+    min-height: 100vh;
+}
+
+.politics {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding:50px;
+    background-color: #F1F7B5;
+}
+
+.politics h1 {
+    font-family: 'Poppins', Courier, monospace;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.politics p {
+    font-style: 'Figtree';
+    font-size: medium;
+}
+
+.btn-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn {
+    margin: auto; 
+    width: 200px;
+    background-color: #FD8A8A;
+    color: #F1F7B5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.politics a {
+    text-decoration: none;
+    margin: auto;
+}

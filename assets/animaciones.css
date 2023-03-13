@@ -1,0 +1,82 @@
+
+.couple {
+    animation: aparicion 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.gafas {
+    animation: aparicion 0.85s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparicion {
+    50% {
+        transform: translateX(+25%);
+        opacity: 0.15;
+    }
+
+    75% {
+        transform: translateX(+15%);
+        opacity: 0.35;  
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+ 
+.show__more__products:hover {
+    font-weight: 600;
+    border: solid black 1px;
+}
+
+.btn-add:hover {
+    font-weight: 600;
+    border: solid black 1px;
+    background-color: palevioletred;
+}
+
+.btn-remove:hover,
+.add:hover {
+    font-weight: 600;
+    border: solid black 1px;
+}
+
+@media(max-width:981px) {
+
+@keyframes aparicion {
+    50% {
+        transform: translateX(-25%);
+        opacity: 0.15;
+    }
+
+    75% {
+        transform: translateX(-15%);
+        opacity: 0.35;  
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        transform: scaleX(-1);
+    }
+}
+}
+
+.redes img,
+.info span,
+.item-localizacion a {
+    transition: transform 0.2s;
+}
+
+.redes img:hover,
+.info span:hover,
+.item-localizacion a:hover {
+   transform: scale(1.1);
+}
+.info a:hover,
+.item-localizacion a:hover {
+   color: blue;
+}
+

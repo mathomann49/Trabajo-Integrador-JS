@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro/login</title>
+    <link rel="stylesheet" href="./logstyles.css">
+</head>
+<body>
+    <div class="form__container">
+            <div class="header">
+                <h2 class="form__h2"> Inicia sesión</h2>
+                <p class="form__p">¿No tenes cuenta? <a href="./reg.html" class="reg__link">Registrate aquí</a></p>
+            </div>
+            <form class="form" id="form">                       
+             <div class="form__sec">
+                <label for="username" class="form__label">Usuario</label>
+                <input type="text" id="username" class="form__input"  placeholder="Juan Perez">
+                <small></small>
+                </div>
+
+                
+
+                <div class="form__sec">
+                <label for="password" class="form__label">Contraseña</label>
+                <input type="password" id="password" class="form__input"  placeholder ="Contraseña">
+                <small></small>
+                </div>
+                
+               
+                <div class="form__sec-submit" >
+                    <button type="submit" class="btn__send">Ingresar</button>
+                     
+                   
+                </div>
+            </form>
+            
+            <a class="btn" href="../index.html#hero">Volver</a>
+    </div>
+         <div class="modal__success" id="modal__success">
+                         <p class="form__msg-success" id="form__msg-success">¡Iniciaste sesión!</p>
+                    </div>   
+            <script src="./log.js"></script>
+</body>
+</html>

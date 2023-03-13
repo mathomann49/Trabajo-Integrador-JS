@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./regstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="form__container">
+            <div class="header">
+            <h2 class="form__h2">Regístro</h2>
+            <p class="form__p"><b>Importante:</b> de los datos consignados depende la correcta entrega de la compra</p>
+            </div>
+            <form class="form" id="form">                       
+             <div class="form__sec">
+                <label for="username" class="form__label">Usuario</label>
+                <input type="text" id="username" class="form__input"  placeholder="Juan Perez">
+                <small></small>
+                </div>
+
+                <div class="form__sec">
+                <label for="email" class="form__label">e-mail</label>
+                <input type="email" id="email" class="form__input"  placeholder="junio@tmail.com">
+                <small></small>
+                </div>
+
+                <div class="form__sec">
+                <label for="password" class="form__label">Contraseña</label>
+                <input type="password" id="password" class="form__input"  placeholder ="Contraseña">
+                <small></small>
+                </div>
+
+                <div class="form__sec" >
+                <label for="password2" class="form__label">Confirme Contraseña</label>
+                <input type="password" id="password2" class="form__input"  placeholder="repite contraseña">
+                <small></small>
+                </div>
+
+                <div class="form__sec-terms" id="form__terms">
+                    <input class="form__checkbox" type="checkbox" name="terms" id="terms" ><p><span>Acepto las</span><a href="./politicas.html">Políticas de privacidad</a></p>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox"><p><span> Recibir novedades</span><span> por correo</span></p>
+                </div>
+                 
+               
+                <div class="form__sec-submit" >
+                    <button type="submit" class="btn__send">Registrar</button>
+                     
+                   
+                </div>
+            </form>
+            
+            <a class="btn" href="../index.html#hero">Volver</a>
+    </div>
+         <div class="modal__success" id="modal__success">
+                         <p class="form__msg-success" id="form__msg-success">¡Se completó el registro exitosamente!</p>
+                    </div>   
+            <script src="./reg.js"></script>
+</body>
+</html>

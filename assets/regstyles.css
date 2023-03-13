@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=GFS+Didot&family=Montserrat&family=PT+Sans+Narrow:wght@400;700&family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./gafas-grafico-ojos-sobre-fondo-blanco.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding-right: 10px;
+}
+
+.form__container {
+    width: 95%;
+    max-width: 700px;
+    background: linear-gradient(220.55deg, #fff 0%, #05dade 100%);
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__h2 {
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.form {
+    background-color: #05dadd;
+    width: 80%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 70%);
+}
+
+.form__sec {
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #bbb7b7;
+}
+
+.form__sec input {
+    display: block;
+    width: 300px;
+    max-width: 95%;
+    background-color: none;
+    color:#bbb7b7;
+    font-size: 1em;
+    padding: 0.6em 0.3em;
+    border: 2px solid #f0f0f0;
+    border-radius: 0.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__sec input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form__label {
+    display: inline-block;
+    color: rgb(102, 186, 249);
+    cursor: pointer;
+    border: #777 solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+}
+
+.form__sec.error input {
+    border-color: #e74c3c;
+}
+
+.form__sec.success input {
+    border-color: #2ecc71;
+}
+
+
+
+.form__sec small {
+    color: red;
+    font-size: 15px;
+    inline-size: 300px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.form__sec-terms,
+.terms {
+    display: flex;
+    inline-size: 310px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.form__sec-submit {
+   padding: 10px 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn__send,
+.btn {
+    align-self: center;
+    justify-self: center;
+    width: 100px;
+    background-color: #9EA1D4;
+    color: #F1F7B5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    box-shadow: inset 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    background-color: #FD8A8A;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 27px;
+    text-decoration: none;
+}
+
+.btn__send:hover,
+.btn:hover {
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+.modal__success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: auto;
+}
+
+.form__msg-success {
+    margin: auto;
+    color: green;
+    width: 200px;
+    background-color: #A8D1D1;
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+@media (max-width:470px) {
+    .form__container {
+       width: 95%;
+       padding-right: 20px;
+    }
+
+    .form {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:430px) {
+    .form {
+        padding: 4.5em 1em;
+
+    }
+
+    .form__p {
+        inline-size: 280px;
+    }
+
+    .form__input {
+        width: 280px;
+    }
+    .form__container {
+        padding-right: 10px;
+    }
+    .body {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:390px) {
+    .form__container {
+        width: 95%;
+    }
+
+    .form {
+        width: 95%;
+    }
+
+    .form__input {
+        width: 95%;
+        max-width: 200px;
+    }
+}
+
+
+@media (max-width:360px) {
+   
+   
+    .terms p {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width:350px) {
+    
+}
+
+@media (max-width:345px) {
+.body {
+    padding-right: -10px;
+}
+
+    .form__container{
+        margin: 2em -60px 0 0;
+        
+    }
+
+    .form {
+        padding: 4.5em 0.7em;
+    }
+
+    .form__p {
+        inline-size: 260px;
+    }
+
+    .form__input {
+        width: 260px;
+    }
+
+    .terms {
+        align-items: center;
+       }
+}
+
+@media (max-width:320px) {
+    .form__container {
+        margin-right: -70px;
+    }
+}
