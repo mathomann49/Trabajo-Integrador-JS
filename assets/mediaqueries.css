@@ -373,8 +373,6 @@
     margin-left: 0;
 }
 
-
-
 .categories {
     padding-right: 20px;
 }
@@ -404,6 +402,7 @@
 .how-to-buy li,
 .modal__faqs .faqs li {
     font-size: 12px;
+   
 }
 
 }
