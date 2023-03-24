@@ -95,11 +95,11 @@ input::placeholder {
 }
 
 .form__sec.error input {
-    border-color: #e74c3c;
+    border: #e74c3c solid 2px;
 }
 
 .form__sec.success input {
-    border-color: #2ecc71;
+    border: #13b657 solid 2px;
 }
 
 
@@ -116,7 +116,7 @@ input::placeholder {
 .form__sec-terms,
 .terms {
     display: flex;
-    inline-size: 310px;
+    inline-size: 250px;
     flex-wrap: wrap;
     font-size: 15px;
     padding: 10px 0;
@@ -211,10 +211,18 @@ input::placeholder {
 }
 
 @media (max-width:390px) {
-    
+    body {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
     
     .form__container {
         padding: 20px 10px;
+        align-self: center;
+        width: 95%;
     }
     
     .form {
